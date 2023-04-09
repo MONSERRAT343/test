@@ -18,8 +18,12 @@ services:
     command: "./home/bundle exec rails server -b 0.0.0.0"
     environment:
       - RAILS_ENV=development
-      - POSTGRES_HOST=postgresql://postgres:postgres@db:5432/postgres
       - SECRET_KEY_BASE=60e13c3d4bf990b33d43fef3a5bce0fbd1b900a9e32740d4ac036190d280eb767b278441e95e2fb8ea3ca85e9b0c0b950d82bef282832e4c1bfb3d027260fb
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      
  
 
     volumes:
